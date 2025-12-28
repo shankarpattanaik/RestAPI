@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
+  padding: 30px;
+}
+
+h1 {
+  color: maroon;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.post {
+  background-color: #ffffff;
+  padding: 18px 22px;
+  margin: 18px auto;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
+}
+
+.user,
+.username {
+  font-style: italic;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: maroon;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a00000;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(128, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+button.btn {
+  appearance: none;
+  background-color: maroon;
+}
+
+.post a,
+.post form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post form {
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+a.btn[href*="new"] {
+  display: block;
+  width: 220px;
+  margin: 35px auto;
+  text-align: center;
+  font-size: 16px;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.6);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(128, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+form {
+  background: #ffffff;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: maroon;
+  box-shadow: 0 0 6px rgba(128, 0, 0, 0.35);
+}
+
+form button {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  background-color: maroon;
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #a00000;
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .post,
+  form {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
